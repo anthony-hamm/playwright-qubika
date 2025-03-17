@@ -50,6 +50,7 @@ You should see the Playwright interface up and running. We are now ready to run 
 [Follow these instructions to add new tests into the project.](https://playwright.dev/docs/writing-tests)
 
 
+
 ## Solution overview
 
 This is Playwright project that uses the page object model design pattern. In general, Playwright best practices are followed where possible and the configuration is largely the default configuration generated when you install Playwright.
@@ -59,20 +60,21 @@ The site under test is the QA env for [Qubika Club Admin](https://club-administr
 The sample test consist on create a user through [API](https://api.club-administration.qa.qubika.com/swagger-ui/index.html#/), then login and lastly create a category and subcategory with their corresponding validations. 
 
 
+
 ## Framework Selection
 
 Chose Playwright for web testing because it offers excellent cross-browser compatibility, robust auto-waiting features to handle dynamic content, a user-friendly API, support for multiple programming languages, advanced debugging tools, and is actively maintained by Microsoft, making it a reliable and powerful option for modern web application testing across different browsers and platforms.
 
-# Key reasons to choose Playwright:
+### Key reasons to choose Playwright:
+* Cross-browser support: Works seamlessly with major browsers like Chrome, Firefox, and Safari on various operating systems. 
+* Automatic waiting: Built-in mechanisms to wait for elements to load before interacting with them, reducing flaky tests. 
+* Multiple language support: Write tests in your preferred language like JavaScript, Python, Java, C#. 
+* Headless and headful testing: Ability to run tests in both headless and visible browser modes depending on your needs. 
+* Advanced debugging tools: Includes a trace viewer, code generation, and inspector to easily identify and troubleshoot issues. 
+* Network interception: Simulate different network conditions to test edge cases. 
+* Parallel test execution: Run multiple tests simultaneously for faster feedback. 
+* Active development and community: Backed by Microsoft with a growing community for support and resources. 
 
-* *Cross-browser support:* Works seamlessly with major browsers like Chrome, Firefox, and Safari on various operating systems. 
-* *Automatic waiting:* Built-in mechanisms to wait for elements to load before interacting with them, reducing flaky tests. 
-* *Multiple language support:* Write tests in your preferred language like JavaScript, Python, Java, C#. 
-* *Headless and headful testing:* Ability to run tests in both headless and visible browser modes depending on your needs. 
-* *Advanced debugging tools:* Includes a trace viewer, code generation, and inspector to easily identify and troubleshoot issues. 
-* *Network interception:* Simulate different network conditions to test edge cases. 
-* *Parallel test execution:* Run multiple tests simultaneously for faster feedback. 
-* *Active development and community:* Backed by Microsoft with a growing community for support and resources. 
 
 
 ## Enhancements
@@ -80,6 +82,11 @@ Chose Playwright for web testing because it offers excellent cross-browser compa
 * Locators refactoring (FE to implement data-test-id)
 * Setup cloud reporting
 * Setup CI/CD integration
-* Enable other web & mobile inbuilt drivers (currently failing on )
+* Enable other web & mobile inbuilt drivers (currently failing with some other drivers)
 * Enable lint
 * Implement soft assertions
+
+
+## Bugs
+
+Some of the bugs found during exploratory testing are [here](https://docs.google.com/spreadsheets/d/1EcoAumwHO3nicvpxDp5BIHBRaxK_97QnarG4XN6TeOk/edit?usp=sharing)
